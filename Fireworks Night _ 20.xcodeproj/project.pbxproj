@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		2293D89226A92310001ECC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293D89126A92310001ECC63 /* AppDelegate.swift */; };
 		2293D89426A92310001ECC63 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2293D89326A92310001ECC63 /* GameScene.sks */; };
-		2293D89626A92310001ECC63 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2293D89526A92310001ECC63 /* Actions.sks */; };
 		2293D89826A92310001ECC63 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293D89726A92310001ECC63 /* GameScene.swift */; };
 		2293D89A26A92310001ECC63 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293D89926A92310001ECC63 /* GameViewController.swift */; };
 		2293D89D26A92310001ECC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2293D89B26A92310001ECC63 /* Main.storyboard */; };
 		2293D89F26A92313001ECC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2293D89E26A92313001ECC63 /* Assets.xcassets */; };
+		2293D8A826A923ED001ECC63 /* fuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2293D8A626A923ED001ECC63 /* fuse.sks */; };
+		2293D8A926A923ED001ECC63 /* explode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2293D8A726A923ED001ECC63 /* explode.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2293D88E26A92310001ECC63 /* Fireworks Night _ 20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fireworks Night _ 20.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2293D89126A92310001ECC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2293D89326A92310001ECC63 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		2293D89526A92310001ECC63 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		2293D89726A92310001ECC63 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2293D89926A92310001ECC63 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2293D89C26A92310001ECC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2293D89E26A92313001ECC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2293D8A026A92313001ECC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2293D8A626A923ED001ECC63 /* fuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fuse.sks; sourceTree = "<group>"; };
+		2293D8A726A923ED001ECC63 /* explode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explode.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				2293D89126A92310001ECC63 /* AppDelegate.swift */,
 				2293D89326A92310001ECC63 /* GameScene.sks */,
-				2293D89526A92310001ECC63 /* Actions.sks */,
 				2293D89726A92310001ECC63 /* GameScene.swift */,
 				2293D89926A92310001ECC63 /* GameViewController.swift */,
 				2293D89B26A92310001ECC63 /* Main.storyboard */,
 				2293D89E26A92313001ECC63 /* Assets.xcassets */,
 				2293D8A026A92313001ECC63 /* Info.plist */,
+				2293D8A726A923ED001ECC63 /* explode.sks */,
+				2293D8A626A923ED001ECC63 /* fuse.sks */,
 			);
 			path = "Fireworks Night _ 20";
 			sourceTree = "<group>";
@@ -129,8 +132,9 @@
 			files = (
 				2293D89D26A92310001ECC63 /* Main.storyboard in Resources */,
 				2293D89426A92310001ECC63 /* GameScene.sks in Resources */,
+				2293D8A826A923ED001ECC63 /* fuse.sks in Resources */,
+				2293D8A926A923ED001ECC63 /* explode.sks in Resources */,
 				2293D89F26A92313001ECC63 /* Assets.xcassets in Resources */,
-				2293D89626A92310001ECC63 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "KhoiLe.Fireworks-Night---20";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -309,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "KhoiLe.Fireworks-Night---20";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
